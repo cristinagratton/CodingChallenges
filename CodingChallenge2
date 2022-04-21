@@ -1,0 +1,14 @@
+//Find and return the smalles and largest numbers of an array and return 
+
+function findSmallAndBigNumber(arr) {
+  let lastElement = Math.max(...arr);
+  let firstElement = Math.min(...arr);
+
+  let returnArray = [];
+  
+  returnArray.push(firstElement, lastElement);
+
+return returnArray;
+}
+
+console.log(findSmallAndBigNumber([1, 2, 3, 4, 5]));
