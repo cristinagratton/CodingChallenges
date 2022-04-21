@@ -1,0 +1,15 @@
+//create a function to reverse a string: https://www.coderbyte.com/editor/First%20Reverse:JavaScript
+
+function FirstReverse(str) { 
+
+  // code goes here  
+  let reverseStr = "";
+  for (let i=(str.length - 1); i >= 0; i--) {
+    reverseStr += str[i];
+  }
+  return reverseStr; 
+
+}
+   
+// keep this function call here; this was the prompt within coderbyte 
+console.log(FirstReverse(readline()));
