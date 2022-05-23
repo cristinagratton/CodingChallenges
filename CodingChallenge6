@@ -1,0 +1,13 @@
+//Find hidden word function
+//https://edabit.com/challenge/rvsvGvqZ3BzNieKqA
+
+function detectWord(str) {
+	let word = "";
+	let strArray = str.split("");
+	for (let i = 0; i < strArray.length; i++) {
+		if (i is capslock) {
+			word = word + i; 
+		}
+	}
+	return word;
+}
