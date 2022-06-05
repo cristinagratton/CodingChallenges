@@ -1,0 +1,29 @@
+//https://edabit.com/challenge/iwdZiFucR5wkQsFHu
+//Older than me challenge
+
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	compareAge(other) {
+		// Write code here!
+		if (this.age > other.age) {
+			return `${other.name} is younger than me.`;
+		} else if (this.age < other.age) {
+			return `${other.name} is older than me.`;
+		} else if (this.age === other.age) {
+			return `${other.name} is the same age as me.`;
+		}
+	}
+		
+}
+
+let p1 = new Person("Cristina", 27);
+let p2 = new Person("Steve", 30);
+let p3 = new Person("Terence", 36);
+let p4 = new Person("Caterina", 36);
+console.log(p1.compareAge(p2));
+console.log(p2.compareAge(p1));
+console.log(p3.compareAge(p4));
